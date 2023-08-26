@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Batman Resume</title>
+  <style>
+    .contact{
+        float: left;
+        margin-left: 10px;
+        color: #160101;
+    }
+    .address{
+        float: right;
+        margin-right: 10px;
+        color: #160101;
+    }
+    .END{
+        text-align: center;
+        margin-top: 130vh;
+    }
+    .chart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+
+        }
+        .chart svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .chart circle {
+            fill: none;
+            stroke-width: 10;
+        }
+        .chart .background {
+            stroke: #9c9c9c;
+        }
+        .chart .foreground {
+            stroke: gold;
+            stroke-dasharray: 314.16;
+            stroke-dashoffset: 314.16;
+            transition: stroke-dashoffset 1s;
+        }
+        .chart text {
+            font-size: 10px;
+            font-weight: bold;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            color: #160101;
+        }
+    body::before {
+  content: "";
+  position: absolute;
+  top: 31vh;
+  left: 0;
+  width: 200vh;
+  height:150vh;
+  background-image: url(https://www.wallpaperbetter.com/wallpaper/212/111/578/logo-batman-background-for-1080P-wallpaper.jpg);
+  
+  opacity: 0.5;
+  
+}
+    .batman-symbol-container {
+      width: auto;
+      height: 30vh;
+      background-image: url(https://th.bing.com/th/id/R.43af9c0d4daf706a79769994b0babe63?rik=alKKU%2b8bKsNPXA&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f7Ta%2f6LR%2f7Ta6LReBc.png&ehk=7FYqi27VXZ5AIURC56mywLuVPGbVvpdwoNJC4x4Kxlw%3d&risl=&pid=ImgRaw&r=0);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: gold;
+      background-position: center;
+      
+    }
+    .batman-head-container {
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      background-image: url(https://th.bing.com/th/id/R.67455eac523258d1eb35203d90a282f7?rik=y3Dy8g7XeAwN5Q&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fbatman-head-silhouette%2fbatman-head-silhouette-4.jpg&ehk=hCneAPlSSKCHC3XtgZXwnlF3HURXd00UvhAEWd9r8Ro%3d&risl=&pid=ImgRaw&r=0);
+      overflow: hidden;
+      background-repeat: no-repeat;
+     border-radius: 50%;
+    }
+    
+    .batman-head-container img {
+      width: 100%;
+      background-color: #333;
+    }
+    .batman-symbol {
+      width: 100%;
+      height: auto;
+    }
+    body {
+      font-family: VLNL Breakz W00 Condensed Bold;
+      background-color: #1a1919;
+      color: #c4bebe;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      max-height: 2000px;
+    }
+    .header {
+      text-align: center;
+      margin-top: 13%;
+     
+    }
+    .header img {
+      width: 150px;
+      border-radius: 60%;
+
+    }
+    .header h1 {
+      font-size: 3vh;
+      margin-top: 12vh;
+      color: gold;
+       font-family: VLNL Breakz W00 Condensed Bold;
+    }
+    .header h3 {
+      font-size: 2vh;
+      margin-top: 2vh;
+      font-family: VLNL Breakz W00 Condensed Bold;
+      color: gold;
+    }
+    .section {
+      margin-top: 20px;
+      width: 60%;
+      float: left;
+      line-height: 4vh;
+      font-size: 20px;
+      
+    }
+    .section h3 {
+      font-size: 34px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+    .section ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .column li {
+      margin-bottom: 10px;
+      
+    }
+    .section p {
+      margin-top: 0;
+    }
+      .bar-container {
+      width: 100%;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+    .bar {
+      width: 0%;
+      height: 15px;
+      background-color: gold;
+      transition: 0.5s;
+
+    }
+    .column h3{font-size: 24px;}
+    .column{
+        width: 38%;
+      float: right;
+      position:absolute ;
+        top :55vh ;
+        right: 0;   
+        font-size: 15px;
+    }
+    .column::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -10px;
+      border-right: 2px dotted yellow;
+      margin-bottom: 30px;
+    }
+  </style>
+  <link href="https://db.onlinewebfonts.com/c/1dde0d538e53b54a28c197ae087d6ddd?family=VLNL+Breakz+W00+Condensed+Bold" rel="stylesheet">
+</head>
+<body>
+    <div class="batman-symbol-container">
+    <div class="contact">
+        <h1>Contact Details</h1>
+        <h3>Aryan Srivastava is me,<br>
+        Present developer at Masai Comics, <br>
+    Kolkata , India</h3>
+    </div>
+    <div class=" address">
+        <h3>Mobile NO.: +918303371199 <br>
+        E-mail : aryansrivastava03520@gmail.com <br>
+    Address: Binduar, Ahirauli Bazar <br>
+    kushinagar , U.P -274149</h3>
+    </div>
+    <div class="container">
+    <div class="header">
+      <h1>ARYAN SRIVASTAVA</h1>
+      <h3>Developer</h3>
+    </div>
+</div>
+</div>
+    </div>
+    <div class="batman-head-container">
+        <img src="https://th.bing.com/th/id/OIP.n-LHkr2_MSi76CnF4WvLMwHaLc?pid=ImgDet&rs=1" alt="Batman Head">
+      </div>
+    <div class="section">
+      <h3>Summary</h3>
+      <p>Experienced software engineer with a strong background in developing web applications. Skilled in multiple programming languages and frameworks. Passionate about solving complex problems and delivering high-quality code.</p>
+    </div>
+    <div class="section">
+      <h3>Experience</h3>
+      <ul>
+        <li>
+          <h4>Software Engineer at Wayne Enterprises</h4>
+          <p>Developed and maintained web applications for various departments within the company. Worked on projects using technologies such as React, Node.js, and MongoDB.</p>
+        </li>
+        <li>
+          <h4>Software Engineer at Gotham Tech</h4>
+          <p>Worked on a team to develop a large-scale e-commerce platform. Contributed to the development of the front-end using Angular and the back-end using Java and Spring.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <h4>Bachelor of Science in Computer Science</h4>
+          <p>Gotham University</p>
+        </li>
+      </ul>
+    </div>
+   
+      <div class="column"><h3>Skills</h3>
+      <ul>
+        <li>JavaScript
+            <div class="bar-container">
+                <div class="bar" style="width: 60%"></div>
+              </div><br>
+        </li>
+        <li>React
+            <div class="bar-container">
+                <div class="bar" style="width: 70%"></div>
+              </div><br>
+        </li>
+        <li>Node.js
+            <div class="bar-container">
+                <div class="bar" style="width: 65%"></div>
+              </div><br>
+        </li>
+        <li>MongoDB
+            <div class="bar-container">
+                <div class="bar" style="width: 62%"></div>
+              </div><br>
+        </li>
+        <li>Java<div class="bar-container">
+            <div class="bar" style="width: 68%"></div>
+          </div><br></li>
+        <li>Spring<div class="bar-container">
+            <div class="bar" style="width: 75%"</div>
+          </div><br></li>
+        <li>Angular<div class="bar-container">
+            <div class="bar" style="width: 75%"></div>
+          </div><br></li>
+        <li>CSS<div class="bar-container">
+            <div class="bar" style="width: 72%"></div>
+          </div><br></li>
+        <li>HTML<div class="bar-container">
+            <div class="bar" style="width: 62%"></div>
+          </div><br></li>
+      </ul>
+      
+      <h2>Language Expertise</h2>
+      <div class="chart">
+          <svg width="200" height="200">
+              <circle class="background" cx="100" cy="100" r="50"></circle>
+              <circle class="foreground english" cx="100" cy="100" r="50"></circle>
+          </svg>
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
+              English
+          </div>
+      </div>
+      <div class="chart">
+          <svg width="200" height="200">
+              <circle class="background" cx="100" cy="100" r="50"></circle>
+              <circle class="foreground hindi" cx="100" cy="100" r="50"></circle>
+          </svg>
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)" >
+              Hindi
+          </div>
+      </div>
+  
+      <script>
+          // Set the percentage of language expertise here
+          var englishPercentage = 80; // 80%
+          var hindiPercentage = 90; // 90%
+  
+          document.querySelector(".english").style.strokeDashoffset = (100 - 90) / 100 * 314.16;
+          document.querySelector(".hindi").style.strokeDashoffset = (100 - 95) / 100 * 314.16;
+      </script>
+</div>
+
+<div class="END">-----ALWAYS BE YOURSELF UNLESS YOU CAN BE BATMAN.THEN ALWAYS BE BATMAN ------</div>
+</body>
+      
+    
+
